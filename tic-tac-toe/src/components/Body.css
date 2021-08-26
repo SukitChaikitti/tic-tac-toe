@@ -1,0 +1,32 @@
+.body {
+    height: calc(100vh - 70px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(173, 216, 230, 0.836);
+}
+
+.body__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.row {
+    display: flex;
+    
+}
+
+.lastrow {
+    display: flex;
+}
+
+.winner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+

@@ -1,0 +1,17 @@
+* {
+  margin: 0;
+}
+
+.start {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 70px);
+  color: black;
+  background: rgba(173, 216, 230, 0.836);
+  font-size: 20px;
+}
+
+.app {
+  height: 100vh;
+}

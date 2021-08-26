@@ -1,0 +1,14 @@
+.login {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login__container > button{
+    padding:15px 20px;
+    border-radius: 10px;
+    background-color: cornflowerblue;
+    color: white;
+    border: none;
+}
