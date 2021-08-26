@@ -1,44 +1,22 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) template.
 
-## Available Scripts
+หลังจากที่ดาวโหลดลงมาแล้ว ให้เปิด vscode เปิด termenal cd เข้าไปยังโฟลเดอร์ tic-tac-toe แล้ว พิม npm i หลังจากเสร็จดาวโหลด tool ต่างๆแล้ว
+ให้พิม npm start 
 
-In the project directory, you can run:
+โปรแกรม:
 
-### `npm start`
+เข้า login ผ่านปุ่มที่สร้างไว้จะเป็นการ login ผ่าน google 
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+เกม:
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+เลือก row ที่ต้องการแล้วคลิกปุ่ม select เพื่อคอนเฟิม เล่นเกมจนจบ สามารถกดปุ่ม reset game ระหว่างเล่นหรือกดตอนเล่นจบแล้วเพื่อเล่นใหม่อีกครั้ง
 
-### `npm test`
+ปุ่ม history สามารถกดดูได้ทางด้านขวาบนกด close เพื่อกลับไปหน้าแรก
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+algorithm:
 
-### `npm run build`
+สร้าง box ขึ้นมาโดยให้มี index ติดอยู่ด้วย ขึ้นอยู่กับจำนวน row ที่เราเลือก
+จากนั้นสร้าง array เพื่อเก็บค่าตาม index ที่มีแล้วส่งข้อมูลจาก array ที่มี index เดียวกันไปให้ box
+ส่วนวิธีชนะเกม
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+สร้างลูปเพื่อให้เอา Index ต่างๆไปสร้างเป็น array ในการเก็บ ผลชนะโดยรู้อยู่แล้วว่าจะมีแค่ row และ column และรูปแบบเฉียงเท่านั้นที่จะชนะ
+เก็บ index เหล่านั้นมารวมเป็น array เพื่อนำไปใช้ต่อ
